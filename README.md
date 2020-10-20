@@ -1,7 +1,7 @@
 # FunctionsForRandomBoardControl
 For a board (matrix) of size MxN, where M is countable by letters and N is countable by numbers,
 the following functions implement different algorithms according to specific rules for a random game.
-In the game each spot in the board gets random spots on the board, which the player is allowed to move to. some of the allowed moves may be "illegal", either if the spot is filled with the symbol '*', or if the spot was already moved through.
+In the game each spot in the board gets random spots on the board, which the player is allowed to move to. some of the allowed moves may be "illegal", either if the spot is filled with the symbol '*', or if the spot is out of bound.
 
 ### Function 1: 
 From a given position, find all valid moves, and return an array of structs of them.
@@ -24,4 +24,4 @@ If the path is illegal the function ends and returns 1.
 Otherwise the function prints the board with the help of "Function 2", but ignores previously visited spots. If the path covers the whole board returns 2, otherwise returns 3. If the file doesn't exist it returns -1.
 
 ## Tester
-The tester is a main function file, it reads a board and a list of moves from a given text file. for each function the tester creates whatever the function needs according to the text files, and prints for each function weather it worked succesfully or not.
+The tester is a main function file, it reads a board and a list of moves from given text files matr.txt for the board and movesFile.txt. for each function the tester creates whatever the function needs according to the text files, and prints for each function weather it worked succesfully or not.
