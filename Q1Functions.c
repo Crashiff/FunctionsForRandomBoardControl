@@ -12,7 +12,7 @@ boardPosArray ** validMoves(movesArray **moves, char **board)
 	{
 		for (iC = 0; iC < M; iC++)
 		{
-			validMovesArray[iR][iC].size = 0; ///start counter for valid moves for specific coord
+			validMovesArray[iR][iC].size = 0; ///start counter for valid moves for specific coordinations
 			validMovesArray[iR][iC].positions = malloc(sizeof(boardPos) * moves[iR][iC].size); ///max possible size for positions, reallocated later
 			assert(validMovesArray[iR][iC].positions != NULL);
 	
